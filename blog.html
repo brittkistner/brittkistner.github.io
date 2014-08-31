@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <style type="text/css"
+    >
+      @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+    </style>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li class="active"><a href="blog.html">Blog</a></li>
+            <li><a href="index.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="container hero">
+        <h1>COMING SOON</h1>
+      </div>
+    </div>
+
+    <!-- Move to footer -->
+    <div class="container-fluid third" id="contact">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-6 clear">
+          <img src="img/oh_hai.png" alt = "" class="img-responsive oh-hai">
+        </div>
+      </div>
+      <div class="row cartoon">
+        <div class="col-sm-4 col-sm-offset-4" id="fred">
+          <img src="img/fred.png" alt = "" class="img-responsive">
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-sm-2 pull-right">
+          <p>&copy; 2014 Brittney Kistner.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+    >
+    $(document).ready(function() {
+      $("#fred").hover(
+        function(){
+          if($('.oh-hai').is(":visible")){
+            $('.oh-hai').hide();
+          } else{
+            $('.oh-hai').show();
+          }
+          $(this).find("div #oh-hai").show();
+        }
+      );
+    });
+    </script>
+  </body>
+</html>
+

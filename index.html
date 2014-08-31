@@ -1,1 +1,156 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <style type="text/css"
+    >
+      @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+    </style>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron & About-->
+    <div class="jumbotron">
+      <div class="container hero">
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-5" id="photo">
+            <img src="img/BK_Profile.jpg" alt="Photo of Brittney Kistner" class="img-circle img-responsive">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-4" id="brittney">
+            <h1>Hi!  I'm <span>Brittney</span>.</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" id="about">
+            <p>
+              I'm a student at RocketU in San Francisco.  Prior to RocketU I worked as a technical recruiter in Austin,TX.  I was recently introduced to coding and have been nerding out ever since.  I graduated from the University of Illinois with a bachelor's degree in Economics.  A few things you should know about me: I have a severe addiction to chocolate, my drink of choice is Earl Grey tea, and I want to take up skeet shooting. Come and get to know me at my <span><a href="blog.html">blog</a></span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio -->
+    <div class="container portfolio" id="portfolio">
+      <div class="row slogan">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div class="row gallery">
+        <article class="col-sm-4 project">
+          <a href="img/number-1-a.jpg">
+            <img src="img/number-1-a.jpg" alt = "" class="img-circle img-responsive">
+            <div class="details">Project 1</div>
+          </a>
+        </article>
+        <article class="col-sm-4 project">
+          <a href="img/number-2-a.jpg">
+            <img src="img/number-2-a.jpg" alt = "" class="img-circle img-responsive">
+            <div class="details">Project 2</div>
+          </a>
+        </article>
+        <article class="col-sm-4 project">
+          <a href="img/number-3-a.jpg">
+            <img src="img/number-3-a.jpg" alt = "" class="img-circle img-responsive">
+            <div class="details">Project 3</div>
+          </a>
+        </article>
+      </div>
+      <div class="row gallery">
+        <article class="col-sm-4 project">
+            <a href="img/number-4-a.jpg">
+              <img src="img/number-4-a.jpg" alt = "" class="img-circle img-responsive">
+              <div class="details">Project 4</div>
+            </a>
+        </article>
+        <article class="col-sm-4 project">
+            <a href="img/number-5-a.jpg">
+              <img src="img/number-5-a.jpg" alt = "" class="img-circle img-responsive">
+              <div class="details">Project 5</div>
+            </a>
+        </article>
+        <article class="col-sm-4 project">
+            <a href="img/number-6-a.jpg">
+              <img src="img/number-6-a.jpg" alt = "" class="img-circle img-responsive">
+              <div class="details">Project 6</div>
+            </a>
+        </article>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="container-fluid third" id="contact">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4 contact">
+          <h2>Come see me on the internet</h2>
+          <h3><a href="https://www.linkedin.com/in/brittneykistner" target="_blank">LinkedIn</a></h3>
+          <h3><a href="https://github.com/brittkistner" target="_blank">Github</a></h3>
+          <h3><a href="https://twitter.com/brittkistner" target="_blank">Twitter</a></h3>
+          <h3><a href="blog.html" target="_blank">Blog</a></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-6 clear">
+          <img src="img/oh_hai.png" alt = "" class="img-responsive oh-hai">
+        </div>
+      </div>
+      <div class="row cartoon">
+        <div class="col-sm-4 col-sm-offset-4" id="fred">
+          <img src="img/fred.png" alt = "" class="img-responsive">
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-sm-2 pull-right">
+          <p>&copy; 2014 Brittney Kistner.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+    >
+    $(document).ready(function() {
+      $("#fred").hover(
+        function(){
+          if($('.oh-hai').is(":visible")){
+            $('.oh-hai').hide();
+          } else{
+            $('.oh-hai').show();
+          }
+          $(this).find("div #oh-hai").show();
+        }
+      );
+      // function tryAndHide() {
+      //   $(".oh-hai").show();
+      // };
+    });
+    </script>
+  </body>
+</html>
