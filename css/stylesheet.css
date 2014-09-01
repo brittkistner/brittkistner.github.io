@@ -97,7 +97,7 @@
   border-radius: 100%;
   position: absolute;
   top: 27%;
-  left: 30%;
+  left: 31.5%;
   text-decoration: none;
   font-size: 2em;
   background-color: #e9ac33;
@@ -129,7 +129,7 @@ a:hover .details{
 .contact h2{
   text-align: center;
   color: #e9ac33;
-  /*font-size: 1.5em;*/
+  font-size: 2em;
 
 }
 
